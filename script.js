@@ -1,14 +1,11 @@
 function createHearts() {
-    const totalHearts = 20; // Количество седечек
-    const pageHeight = document.documentElement.scrollHeight;
-
-    for (let i = 0; i < totalHearts; i++) {
+    for (let i = 0; i < 20; i++) {
         let heart = document.createElement('div');
         heart.className = 'heart';
         heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.top = Math.random() * pageHeight + 'px';
+        heart.style.top = Math.random() * 100 + 'vh';
         document.body.appendChild(heart);
     }
 }
 
-window.onload = createHearts;
+createHearts();
