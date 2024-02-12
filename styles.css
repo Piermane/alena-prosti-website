@@ -2,21 +2,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, 
-#23d5ab);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     color: #fff;
     text-align: center;
-    overflow: hidden;
-    height: 100vh;
-    position: relative;
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    overflow-x: hidden; /* Предотвращает горизонтальную прокрутку */
+    /* Убрано свойство height: 100vh; чтобы разрешить странице растягиваться */
 }
 
 .container {
@@ -26,6 +18,9 @@ body {
     position: relative;
     z-index: 2;
 }
+
+/* Остальные стили остаются без изменений */
+
 
 header h1 {
     color: #ffdfd3;
@@ -101,4 +96,3 @@ header h1 {
         transform: scale(1) rotate(-45deg);
     }
 }
-
