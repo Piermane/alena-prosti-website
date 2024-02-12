@@ -1,5 +1,5 @@
 function createHearts() {
-    const numberOfHearts = 35; // кол-во сердцек
+    const numberOfHearts = 20; // кол-во сердцек
     for (let i = 0; i < numberOfHearts; i++) {
         let heart = document.createElement('div');
         heart.className = 'heart';
